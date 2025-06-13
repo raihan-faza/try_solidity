@@ -15,14 +15,14 @@ import (
 
 func main() {
 	// this is a code to initiate client
-	client, err := ethclient.Dial("http://127.0.0.1:1337")
+	client, err := ethclient.Dial("http://127.0.0.1:8545")
 	if err != nil {
 		fmt.Printf("failed to dial server, err:%v", err)
 		return
 	}
 
 	// generating private key, dont ask me how
-	privateKey, err := crypto.HexToECDSA("ceritanyaprivatekeytapijangandicontohahahyak")
+	privateKey, err := crypto.GenerateKey()
 	if err != nil {
 		fmt.Printf("failed to generate privatekey, err:%v", err)
 		return
