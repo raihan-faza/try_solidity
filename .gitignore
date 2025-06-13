@@ -1,0 +1,63 @@
+vendor/*
+
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Hardhat build artifacts
+artifacts/
+cache/
+typechain/
+coverage/
+build/
+
+# Go
+vendor/
+*.exe
+*.test
+*.out
+*.log
+
+# Go build output
+*.a
+*.o
+*.so
+*.dll
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# dotenv or secrets (if used)
+.env
+.env.*
+
+# Optional: compiled contracts (if separate)
+*.abi
+*.bin
